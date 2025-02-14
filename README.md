@@ -1,4 +1,4 @@
-# Oracle-ASK-for-EBS-
+# Oracle-ASK-for-EBS
 
 ### Blog Structure: **"Oracle ASK for EBS – Enhancing ERP with AI-powered Digital Assistance"**
 
