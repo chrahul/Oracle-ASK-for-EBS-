@@ -21,10 +21,10 @@ Think of **Select AI** as a **smart assistant** that handles all the complex AI 
    - Example: If you don’t know **what SQL to write**, you can just **describe what you want**, and Select AI will **generate the SQL for you**.
 
 ### **In short, Select AI does all the hard work, so you don’t have to:**
-✔️ **You ask a question in plain English.**  
-✔️ **It figures out the right SQL query for you.**  
-✔️ **It searches your database smartly (using AI-powered vector search).**  
-✔️ **It creates test data when needed.**  
-✔️ **It talks to AI models to improve responses.**  
+**You ask a question in plain English.**  
+**It figures out the right SQL query for you.**  
+**It searches your database smartly (using AI-powered vector search).**  
+**It creates test data when needed.**  
+**It talks to AI models to improve responses.**  
 
-Would you like any more simplifications or real-world examples? 🚀
+
