@@ -1,6 +1,6 @@
 # Oracle-ASK-for-EBS
 
-### Blog Structure: **"Oracle ASK for EBS – Enhancing ERP with AI-powered Digital Assistance"**
+### **"Oracle ASK for EBS – Enhancing ERP with AI-powered Digital Assistance"**
 
 **ASK for EBS (Artificial Intelligence Service Kit for Oracle E-Business Suite)**, its capabilities, and how it revolutionizes ERP interactions by providing AI-powered digital assistance. 
 
