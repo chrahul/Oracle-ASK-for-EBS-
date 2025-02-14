@@ -1,4 +1,4 @@
-### **Oracle Select AI – Simplified Overview **  
+### Oracle Select AI – Simplified Overview  
 
 #### **What is Select AI?**
 - **Natural Language to SQL:** Enables users to query databases using plain English instead of writing complex SQL queries.
