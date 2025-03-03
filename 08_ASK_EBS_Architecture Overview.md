@@ -20,6 +20,10 @@ The **NLQ solution for Oracle EBS** integrates **Oracle Autonomous Database (ADB
 3. **OCI Generative AI Service** – Utilizes **Large Language Models (LLMs)** (e.g., **Cohere, Llama-2**) to convert user queries into structured SQL statements.  
 4. **EBS Database** – Executes the generated SQL queries within a **secure schema** while ensuring strict access controls.  
 
+
+
+![image](https://github.com/user-attachments/assets/7ebd01ea-3c35-414f-b999-830eaaff756c)
+
 ---
 
 ## **Security Features**  
