@@ -109,25 +109,15 @@ While **Oracle Autonomous Database (ADB) must run on OCI**, Oracle **EBS can be 
 
 ---
 
-## **Further Resources**  
-
-For **detailed implementation steps, prerequisites, and integration guidelines**, refer to:  
-**Oracle Technical Paper:** *Enabling Natural Language Query for Oracle EBS Release 12.2*  
-**MOS Note:** *3059877.1*  
 
 ---
-
-### **Final Thoughts**  
-This **next-generation AI-driven solution** enhances the **usability, security, and scalability** of Oracle E-Business Suite by enabling **intelligent, natural language-driven data retrieval**. By leveraging **Oracle Autonomous Database, OCI Generative AI, and Oracle APEX**, businesses can unlock **faster insights and improved decision-making** within their EBS ecosystem.  
-
----
-
-
-Yes, your explanation of **XX_NLQ schema** is well-structured and technically sound. However, I have refined it further to enhance **clarity, precision, and alignment with Oracle best practices**.
-
----
-
 ## **What is the XX_NLQ Schema in Oracle EBS?**  
+
+ **XX_NLQ schema** 
+
+---
+
+
 
 The **XX_NLQ schema** is a **custom schema introduced in Oracle E-Business Suite (EBS) Release 12.2** as part of the **Natural Language Query (NLQ) architecture**. It ensures **secure and controlled execution of AI-generated SQL queries**, enabling seamless integration between **Oracle Generative AI, Oracle Autonomous Database (ADB), and EBS**.
 
