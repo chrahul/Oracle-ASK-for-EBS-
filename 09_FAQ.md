@@ -47,3 +47,46 @@
 
 ---
 
+### Q2 **Where Do the LLM Models Run for ASK EBS?**  
+
+The **LLM (Large Language Model) for ASK EBS runs inside Oracle Cloud Infrastructure (OCI)** as part of the **OCI Generative AI Service**.  
+
+---
+
+## ** LLM Deployment for ASK EBS in OCI**  
+
+1️ **Oracle Hosts LLMs in OCI Generative AI**  
+   - The LLM models (such as **Cohere, Meta’s Llama-2, and others**) are **natively hosted in OCI**.  
+   - Oracle **partners with external AI providers**, but the models are **integrated into OCI’s secure environment**.  
+
+2️ **ASK EBS Calls OCI Generative AI for Query Processing**  
+   - When a user submits a question in **Oracle APEX**, it is first processed in **Oracle Autonomous Database (ADB)**.  
+   - ADB **sends the query to OCI Generative AI** to translate the **natural language prompt into SQL**.  
+   - The AI processing happens **inside OCI**, ensuring data security and compliance.  
+
+3️ **Data Never Leaves Oracle Cloud**  
+   - Since the **LLMs run inside OCI**, there is **no external API call to OpenAI, Google, or any third-party cloud provider**.  
+   - This **ensures complete data privacy**, aligning with **enterprise security policies**.  
+
+---
+
+### **🔹 Where is the AI Model Hosted in OCI?**  
+ The **LLMs are part of OCI Generative AI Service**.  
+ They are **trained and optimized** to work within **Oracle Cloud environments**.  
+ Oracle **partners with AI vendors** (like Cohere) but **keeps the models within OCI’s secure infrastructure**.  
+
+---
+
+### ** Does Oracle Train Its Own LLMs for ASK EBS?**  
+- No, Oracle **does not train its own large-scale LLMs**.  
+- Instead, **it integrates third-party AI models (like Cohere, Llama-2) within OCI**.  
+- However, Oracle enhances these models with **database-aware optimizations**, ensuring accurate SQL generation.  
+
+---
+
+### **🔹 Final Answer**  
+ The **LLM models for ASK EBS run inside Oracle Cloud Infrastructure (OCI)**, specifically in the **OCI Generative AI Service**.  
+ **Data remains within OCI** and does not go to external AI providers.  
+ **AI processing happens in Oracle’s secure cloud environment**, ensuring full compliance with enterprise security.  
+
+---
