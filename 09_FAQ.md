@@ -70,7 +70,7 @@ The **LLM (Large Language Model) for ASK EBS runs inside Oracle Cloud Infrastruc
 
 ---
 
-### **🔹 Where is the AI Model Hosted in OCI?**  
+### ** Where is the AI Model Hosted in OCI?**  
  The **LLMs are part of OCI Generative AI Service**.  
  They are **trained and optimized** to work within **Oracle Cloud environments**.  
  Oracle **partners with AI vendors** (like Cohere) but **keeps the models within OCI’s secure infrastructure**.  
@@ -84,9 +84,89 @@ The **LLM (Large Language Model) for ASK EBS runs inside Oracle Cloud Infrastruc
 
 ---
 
-### **🔹 Final Answer**  
+### ** Final Answer**  
  The **LLM models for ASK EBS run inside Oracle Cloud Infrastructure (OCI)**, specifically in the **OCI Generative AI Service**.  
  **Data remains within OCI** and does not go to external AI providers.  
  **AI processing happens in Oracle’s secure cloud environment**, ensuring full compliance with enterprise security.  
 
 ---
+
+### Q3 **How Does the XX_NLQ Schema Ensure Secure Query Execution?**  
+
+Imagine your **Oracle E-Business Suite (EBS) database** as a **large company office** with **different departments** (Finance, HR, Procurement, etc.). **Not everyone should have access to all data**, just like in an office, **employees can only enter the rooms they are authorized to access**.  
+
+Now, let’s break it down in simple terms:  
+
+---
+
+## **1️ What is the XX_NLQ Schema?**  
+Think of **XX_NLQ** as a **special, secure workspace** inside the **EBS database** where AI-generated queries are executed.  
+
+- It is **separate** from the main EBS database, meaning **queries run in a controlled, limited environment**.  
+- This **prevents accidental data modifications** and ensures **only safe queries are executed**.  
+
+### **Example in Real Life:**  
+Imagine a bank where a customer asks, *"How much balance do I have?"*  
+- The **bank teller (XX_NLQ)** checks **only that customer’s account** and **not anyone else’s**.  
+- The teller **does not have access to modify the customer’s balance**, only to **retrieve** and **display** it.  
+
+---
+
+## **2️ What is Least Privilege Access?**  
+ **Least privilege means giving only the minimum access needed to complete a task.**  
+
+- The XX_NLQ schema **only allows SELECT (read-only) access**, meaning queries can **retrieve data but not change anything**.  
+- It has **no permission to update, delete, or modify sensitive business data**.  
+
+### **Example in Real Life:**  
+Imagine a **warehouse security guard**.  
+- The **guard can check the list of items in stock**, but **cannot move or modify inventory**.  
+- This **prevents unauthorized changes** while allowing safe access.  
+
+---
+
+## **3️ What is Role-Based Access (VPD Policy)?**  
+ **VPD (Virtual Private Database) ensures that users can only see the data they are allowed to access.**  
+
+- Every user in EBS has a **role** (Finance, HR, Procurement, etc.).  
+- The **system checks the user’s role before running the query**.  
+- If a **Finance user** asks for supplier invoices, they **won’t see HR salary details**.  
+
+### **Example in Real Life:**  
+Think of **Netflix Profiles**:  
+- A **kid’s profile** cannot see **movies rated for adults**.  
+- A **user in India** may not see **content available only in the USA**.  
+- The system **automatically filters** what each user is allowed to see.  
+
+---
+
+## ** How Does This Work in ASK EBS?**  
+
+### **🔹 Step 1: A User Asks a Question**  
+ *"Show me all overdue invoices."*  
+
+### **🔹 Step 2: The Query Runs Inside XX_NLQ Schema**  
+ **Controlled execution** → The query runs in a **secure, restricted area**.  
+ **Role-based filtering** → The system checks **what data the user is allowed to see**.  
+
+### ** Step 3: VPD Policy Ensures Data Access Rules**  
+ If the **user is from Finance**, they **see invoices**.  
+ If the **user is from HR**, the system **blocks access**.  
+
+### ** Step 4: The User Gets Only Allowed Data**  
+ The results appear in **Oracle APEX UI**, filtered according to the **user’s role**.  
+
+---
+
+## **🔹 Summary: Why is This Important?**  
+✔ **Prevents Unauthorized Access** – Users can only see what they are allowed to.  
+✔ **Protects Data Integrity** – Queries **cannot modify or delete data**.  
+✔ **Enhances Security** – Role-based access ensures **no accidental data leaks**.  
+✔ **Runs in a Controlled Environment** – AI-generated SQL **does not interfere with EBS operations**.  
+
+---
+
+ **Final Thought:**  
+Just like **a bank teller can check customer balances but not modify them**, **ASK EBS users can query EBS data securely without modifying anything**.  
+
+
