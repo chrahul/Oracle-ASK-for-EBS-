@@ -169,4 +169,103 @@ Think of **Netflix Profiles**:
  **Final Thought:**  
 Just like **a bank teller can check customer balances but not modify them**, **ASK EBS users can query EBS data securely without modifying anything**.  
 
+---
+---
+
+### Q4 **How Oracle ADB on OCI Works with ASK EBS**  
+
+To securely **process, convert, and execute AI-generated queries**, **Oracle Autonomous Database (ADB) on OCI** plays a critical role. It acts as the **middle layer** between the user's question and the final SQL execution inside EBS.  
+
+Let's break it down step by step in a **simple, real-world analogy**.  
+
+---
+
+## **1️ What is Oracle Autonomous Database (ADB) on OCI?**  
+Think of **ADB as an intelligent assistant** that understands both **human language** and **database language (SQL)**.  
+
+- ADB acts like a **translator**—converting user **questions** into **database queries**.  
+- It ensures **data security**, **query optimization**, and **LLM integration** without needing manual intervention.  
+- ADB on **Oracle Cloud Infrastructure (OCI)** provides **scalability, performance, and automated security** for AI-driven applications like **ASK EBS**.  
+
+ **Real-Life Example:**  
+Imagine **a travel agent (ADB)** who listens to **your vacation request (natural language query)** and then finds the **best flights and hotels (structured data from the database)**.  
+
+---
+
+# **2️ What is DBMS_CLOUD_AI Package?**  
+ **DBMS_CLOUD_AI** is a built-in **PL/SQL package in ADB** that allows ASK EBS to interact with **Generative AI models and database metadata**.  
+
+- It helps **send user questions to AI models**.  
+- Retrieves **EBS schema metadata** so AI knows how to structure SQL queries.  
+- Ensures **queries remain efficient and secure** by using the best practices from ADB.  
+
+ **Real-Life Example:**  
+Think of **DBMS_CLOUD_AI** as a **smart assistant in a hotel** that knows where everything is.  
+- If a **guest (user query)** asks, *"Where can I get dinner?"*, the assistant (DBMS_CLOUD_AI) finds **all nearby restaurants** and presents the best options.  
+
+---
+
+## **3️ What is an AI Profile in ASK EBS?**  
+ **AI Profiles store the necessary configuration to generate AI-driven queries for EBS.**  
+
+- It tells ASK EBS **which AI model to use** (e.g., Cohere, Llama-2).  
+- Defines **how metadata should be used** when generating SQL queries.  
+- Ensures **security settings are enforced** during AI interactions.  
+
+ **Real-Life Example:**  
+Think of **AI Profiles** as a **food preference profile in a meal delivery app**.  
+- If you are **vegetarian**, it ensures you only get **veg meals**.  
+- Similarly, AI Profiles ensure the **right database tables** and **security settings** are used for SQL generation.  
+
+---
+
+## **4️ What are LLM Credentials?**  
+ **LLM Credentials authenticate ASK EBS to access Oracle Generative AI securely.**  
+
+- They store **API keys and access permissions** required to communicate with AI models.  
+- Ensures **only authorized database connections** are allowed.  
+- Helps **track usage and prevent unauthorized AI queries**.  
+
+ **Real-Life Example:**  
+Imagine **logging into Netflix**.  
+- Without your **login credentials**, you **cannot access** your favorite movies.  
+- Similarly, **LLM credentials** allow ADB to securely connect with AI services in OCI.  
+
+---
+
+## **5️ How Does EBS Schema Metadata Help in Query Generation?**   **Schema Metadata helps AI understand the database structure and generate accurate SQL queries.**  
+
+- It provides **table names, column names, and relationships** between different tables in EBS.  
+- Ensures AI-generated SQL is **optimized and efficient**.  
+- Prevents **hallucinations** (wrong AI-generated queries).  
+
+ **Real-Life Example:**  
+Think of **Schema Metadata** as a **city map**.  
+- If you ask *"How do I get to the nearest mall?"*, the **map (metadata)** helps AI understand **which roads (database tables) to follow**.  
+- Without metadata, AI **might not find the right route** to your data.  
+
+---
+
+## ** Final Summary: How ADB, AI Profiles, and Schema Metadata Work Together in ASK EBS**  
+
+| **Component**        | **What It Does** | **Real-Life Example** |
+|----------------------|-----------------|------------------------|
+| **Oracle ADB on OCI** | Converts natural language queries into SQL | Travel agent finding the best flights |
+| **DBMS_CLOUD_AI Package** | Processes AI queries and retrieves metadata | Hotel assistant helping guests |
+| **AI Profiles** | Stores AI model selection and security settings | Food preferences in a meal app |
+| **LLM Credentials** | Securely connects ADB to AI services | Logging into Netflix |
+| **EBS Schema Metadata** | Helps AI understand database tables and generate accurate queries | City map guiding you to a mall |
+
+---
+
+### **How This Works in ASK EBS Step-by-Step:**  
+1️ **User asks a question** → *"Show me all overdue invoices."*  
+2️ **Oracle APEX sends query to ADB**  
+3️ **ADB (DBMS_CLOUD_AI) retrieves schema metadata** to understand relevant tables.  
+4️ **LLM (Cohere, Llama-2) in OCI converts the question into SQL**.  
+5️ **SQL query runs inside XX_NLQ schema securely** in EBS.  
+6️ **Filtered results are displayed in APEX UI**.  
+
+This process ensures **secure, accurate, and real-time** AI-driven query execution inside EBS.  
+
 
