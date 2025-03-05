@@ -32,11 +32,11 @@
 ---
 
 ### **Final Summary of ASK EBS Architecture**
-✔ **APEX UI** → Takes the user input in **plain English**.  
-✔ **ADB Select AI** → Processes the **natural language query & enhances metadata**.  
-✔ **OCI Generative AI** → Uses **LLMs to convert natural language into SQL**.  
-✔ **EBS Database (XX_NLQ Schema)** → Runs **SQL securely within EBS with access controls**.  
-✔ **APEX UI** → Displays the **query results** in a user-friendly format.  
+ **APEX UI** → Takes the user input in **plain English**.  
+ **ADB Select AI** → Processes the **natural language query & enhances metadata**.  
+ **OCI Generative AI** → Uses **LLMs to convert natural language into SQL**.  
+ **EBS Database (XX_NLQ Schema)** → Runs **SQL securely within EBS with access controls**.  
+ **APEX UI** → Displays the **query results** in a user-friendly format.  
 
 ---
 
@@ -142,7 +142,7 @@ Think of **Netflix Profiles**:
 
 ## ** How Does This Work in ASK EBS?**  
 
-### **🔹 Step 1: A User Asks a Question**  
+### ** Step 1: A User Asks a Question**  
  *"Show me all overdue invoices."*  
 
 ### **🔹 Step 2: The Query Runs Inside XX_NLQ Schema**  
@@ -158,7 +158,7 @@ Think of **Netflix Profiles**:
 
 ---
 
-## **🔹 Summary: Why is This Important?**  
+## ** Summary: Why is This Important?**  
 ✔ **Prevents Unauthorized Access** – Users can only see what they are allowed to.  
 ✔ **Protects Data Integrity** – Queries **cannot modify or delete data**.  
 ✔ **Enhances Security** – Role-based access ensures **no accidental data leaks**.  
